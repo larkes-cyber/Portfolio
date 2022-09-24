@@ -1,12 +1,11 @@
 const hamburger = document.querySelector('.hamburger'),
-      menu = document.querySelector('.menu'),
-      closeElem = document.querySelector('.menu__close');
+    menu = document.querySelector('.menu'),
+    close = document.querySelector('.menu__close');
 
-hamburger.addEventListener('click', () => {
-    menu.classList.add('active');
+hamburger.addEventListener('click',()=>{
+    menu.classList.remove('non_active');
 });
 
-closeElem.addEventListener('click', () => {
-    menu.classList.remove('active');
+close.addEventListener('click',()=>{
+    menu.classList.add('non_active');
 });
-
