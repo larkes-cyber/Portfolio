@@ -1,13 +1,16 @@
 .promo{
+    position: relative;
     background: url('../img/main_bg.png');
-    min-height: 110vh;
+    min-height: 100vh;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 400px;
+    padding-top: 450px;
+    z-index: 3;
     &__title{
         color: $text_promo_color;
-        width: 532px;
+        width: 732px;
+        line-height: 80px;
     }
     &__subtitle{
         width: 193px;
