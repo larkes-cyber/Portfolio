@@ -1,0 +1,30 @@
+.about_me{
+    background: $main_color_theme;
+
+    &__block{
+        padding-top: 114px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__info{
+        margin-left: 69px;
+        width: 100%;
+        height: 125px;
+    }
+    &__divider{
+        margin-top: 10px;
+        width: 60px;
+        height: 3px;
+        background: $first_main_color;
+    }
+    &__hobby_wrapper{
+
+        display: grid;
+        grid-template-columns: repeat(2, 260px);
+        grid-template-rows: 2fr repeat(2, 1fr);
+        
+
+    }
+}
