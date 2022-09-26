@@ -1,7 +1,6 @@
 .title{
     font-family: 'Poppins';
     font-style: normal;
-    color: $text_promo_color;
     font-size: 56px;
    
     &_fz16{
@@ -15,5 +14,11 @@
     }
     &_fz24{
         font-size: 24px;
+    }
+    &_fz36{
+        font-size: 36px;
+    }
+    &_bold{
+        font-weight: 700;
     }
 }
