@@ -18,9 +18,43 @@
             font-size: 14px;
             grid-area: text;
         }
+        &_block{
+            display: flex;
+            flex-direction: row;
+            margin-left: 11px;
+            &__position_icon{
+                img{
+                    max-width: 28px;
+                }
+                margin-top: 7px;
+                position: relative;
+                @include before_circle;
+                z-index: 2;
+                &:before{
+                    top: -15px;
+                    left: -15px;
+                }
+            }
+            &__wrapper{
+                margin-left:12px;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        #first{
+           grid-area: web;
+        }
+        #second{
+            grid-area: native;
+        }
+        #third{
+            margin-top: -20px;
+            grid-area: cross;
+        }
     }
     &__divider{
-        margin-top: 10px;
+        margin-top: 4px;
+        margin-bottom: 20px;
         width: 60px;
         height: 3px;
         background: $first_main_color;
@@ -35,13 +69,13 @@
     &__hobby_wrapper{
 
         display: grid;
-        grid-template-columns: repeat(2, 260px);
-        grid-template-rows:repeat(3, minmax(100px,150px));
-
+        grid-template-columns: repeat(2, minmax(260px,320px));
+        grid-template-rows:repeat(3, minmax(100px,130px));
+        gap: 40px;
         grid-template-areas: 
-        "text text",
-        "block block1",
-        "block2 null"
+        "text text"
+        "web native"
+        "cross null"
         ;
 
 
