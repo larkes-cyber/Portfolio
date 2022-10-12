@@ -9,3 +9,12 @@ humburger.addEventListener("click",()=>{
 close.addEventListener("click",()=>{
     menu.classList.add("non_active");
 })
+
+const counters = document.querySelectorAll(".skills__scale_percentages"),
+    scales = document.querySelectorAll(".skills__pump");
+
+
+
+counters.forEach((item, i) => {
+    scales[i].style.width = item;
+})
