@@ -16,10 +16,9 @@
         display: grid;
         grid-template-columns:repeat(4,280px);
         grid-template-rows:repeat(2,280px);
-        gap: 5px;
+        gap: 6px;
         #ipad{
-            grid-column: 2/4;
-            
+         grid-column: 2/4;
         }
         
         a{

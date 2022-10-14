@@ -1,0 +1,38 @@
+.price{
+
+    &__title{
+        position: relative;
+        text-align: center;
+        @include before_circle;
+         margin: 66px 0 19px 0;
+        &:before{
+        left: 48.5%;
+        }
+    }
+
+    &__wrapper{
+        margin-top: 60px;
+        margin: 60px 100px 0 20px;
+        display: grid;
+        grid-template-columns: repeat(2,minmax(341px, auto));
+        grid-template-rows: repeat(3,44px);
+        column-gap: 293px;
+        row-gap: 15px;
+    }
+
+    &__item{
+        &__header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            position: relative;
+            @include before_circle;
+            &:before{
+                width: 15px;
+                height: 15px;
+                top:3px;
+                left: -26px;
+            }
+        }
+    }
+}
