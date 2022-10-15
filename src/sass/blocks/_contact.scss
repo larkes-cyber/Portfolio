@@ -1,0 +1,89 @@
+.contact{
+    margin-top: 115px;
+    margin-left: 55px;
+    margin-bottom: 103px;
+    &__wrapper{
+        display: grid;
+        grid-template-columns: 400px 585px;
+        grid-template-rows: 1fr;
+        column-gap: 68px;
+    }
+    &__social{
+         display: grid;
+         grid-template-columns: repeat(3,30px);
+         column-gap: 25px;
+         grid-auto-columns: 30px;
+         margin-top: 20px;
+    }
+    &__content{
+        margin-top: 15px;
+        form{
+            margin-top: 35px;
+            display: grid;
+            grid-template-columns: repeat(2,280px);
+            grid-template-rows: 45px 170px 45px;
+            row-gap: 30px;
+            column-gap: 25px;
+        }
+        &__button{
+            margin-top: 20px;
+            transition: all 0.4s;
+            &:hover{
+                transform: scale(1.05);
+            }
+            a{
+                padding: 12px 78px 12px 78px;
+                color: #000;
+                &:hover{
+                    transform: scale(1.05);
+                    color: #000;
+                    text-decoration: none;
+                }
+            }
+        }
+        &__input_area{
+            position: relative;
+            grid-row: 2/3;
+            grid-column: 1/3;
+            textarea{
+                padding: 14px 0 13px 20px;
+                width: 100%;
+                min-height: 160px;
+                max-height: 180px;
+                resize: none;
+                border-width: 1.5px;
+            }
+        }
+        &__input{
+            position: relative;
+            input{
+                width: 100%;
+                height: 45px;
+                padding: 14px 0 13px 20px;
+                border-width: 1.5px;
+            }
+            &__label{
+                background: white;
+                position: absolute;
+                top:-11px;
+                left: 14px;
+            }
+        }
+
+    }
+    &__title{
+        margin-bottom: 4px;
+        margin-top: 5px;
+    }
+    &__subtitle{
+        position: relative;
+        @include before_circle;
+        &:before{
+            left: -2.5%;
+        }
+    }
+    &__options_text{
+        margin-top: 17px;
+    }
+ 
+}
